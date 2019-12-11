@@ -33,7 +33,9 @@ const MenuBar = (props) => {
         </a>
       )})}
 
-      {/* <a onClick={handleClick} className="item active" id="profile">
+      {/* 
+      old render, not programmatic
+      <a onClick={handleClick} className="item active" id="profile">
         <i className="user large icon" id="profile"/>
       </a>
 
