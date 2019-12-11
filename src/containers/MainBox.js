@@ -24,7 +24,7 @@ class MainBox extends React.Component {
       case "photo":
         detailsToDisplay = <Photos />;
         break;
-      case "cocktal":
+      case "cocktail":
         detailsToDisplay = <Cocktails />;
         break;
       case "pokemon":
@@ -34,7 +34,7 @@ class MainBox extends React.Component {
     
     return (
       <div>
-        <MenuBar changeClickedIcon={this.changeClickedIcon}/>
+        <MenuBar changeClickedIcon={this.changeClickedIcon} shade={this.state.clickedIcon} />
         {detailsToDisplay}
       </div>
     )

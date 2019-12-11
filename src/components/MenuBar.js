@@ -4,19 +4,19 @@ const MenuBar = (props) => {
 
   return (
     <div className="ui four item menu">
-      <a className="item active" id="profile" onClick={props.changeClickedIcon}>
+      <a className={props.shade === "profile" ? "item active" : "item"} id="profile" onClick={props.changeClickedIcon}>
         <i className="user large icon" id="profile"/>
       </a>
 
-      <a className="item" id="photo" onClick={props.changeClickedIcon}>
+      <a className={props.shade === "photo" ? "item active" : "item"} id="photo" onClick={props.changeClickedIcon}>
         <i className="photo large icon" id="photo"/>
       </a>
 
-      <a className="item" id="cocktail" onClick={props.changeClickedIcon}>
+      <a className={props.shade === "cocktail" ? "item active" : "item"} id="cocktail" onClick={props.changeClickedIcon}>
         <i className="cocktail large icon" id="cocktail"/>
       </a>
 
-      <a className="item" id="pokemon" onClick={props.changeClickedIcon}> 
+      <a className={props.shade === "pokemon" ? "item active" : "item"} id="pokemon" onClick={props.changeClickedIcon}> 
         <i className=" themeisle large icon" id="pokemon"/>
       </a>
     </div>
